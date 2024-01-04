@@ -1,0 +1,135 @@
+.collections{
+  padding: 50px 0;
+  padding: 50px;
+  background-image: linear-gradient(180deg, #e1fff32c, #eeffe122 60%);
+}
+.collections h1{
+  text-align: center;
+  padding: 25px 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 50px;
+}
+.collections h1::after{
+  content: '';
+  display: block;
+  border: 1.5px solid #ff4141;
+  width: 100px;
+  margin: 20px auto;
+}
+.collection_box{
+  margin: auto;
+  width: 180vh;
+}
+.collections h4{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 0px 0px 8px #ff414156;
+
+}
+.collection_box ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 20px;
+
+}
+.image{
+  overflow: hidden;
+}
+.image img{
+  filter: blur(1px);
+  transition: all 0.5s ease-in-out;
+}
+.collection_box ul li{
+  flex: 1;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #ffffff4b;
+}
+.collection_box ul li:hover{
+  flex: 2;
+  box-shadow: 0px 4px 8px 0px #c70d0d8a;
+}
+.collection_box ul li:hover img{
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+.desc{
+  padding: 8px;
+}
+.title {
+  margin: 10px 0;
+  color: #555;
+  font-weight: 400;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.old_price {
+  text-decoration: line-through;
+  color: #919191;
+  font-weight: 500;
+}
+.new_price {
+  font-size: 20px;
+  color: #333
+  ;
+}
+
+@media only screen and (max-width: 768px) {
+  .collection_box ul{
+    width:800px
+  }
+  .collection_box{
+    overflow-x:scroll;
+    width:400px;
+  }
+  .image img{
+    width:220px;
+
+  }
+  .title{
+    font-size:16px
+  }
+  .price{
+    font-size:15px
+  }
+  .new_price{
+    font-size:16px
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1324px) {
+  .collection_box ul{
+    width:800px
+  }
+  .collection_box{
+    overflow-x:scroll;
+    width:80%;
+  }
+  .image img{
+    width:250px;
+
+  }
+  .title{
+    font-size:17px
+  }
+  .price{
+    font-size:16px
+  }
+  .new_price{
+    font-size:17px
+  }
+}

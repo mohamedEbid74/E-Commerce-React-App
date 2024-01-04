@@ -1,0 +1,27 @@
+.description{
+  width: 80%;
+  padding: 20px 0;
+  margin: 40px auto;
+}
+.btn{
+  display: flex;
+}
+.btn p {
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+  padding: 15px;
+  color: #616161;
+  cursor: pointer;
+}
+.info{
+  border: 1px solid #ddd;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info p{
+  color: #313131;
+  font-weight: 300;
+  width: 90%;
+}

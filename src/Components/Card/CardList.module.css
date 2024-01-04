@@ -1,0 +1,38 @@
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 150px;
+
+}
+.card_items {
+  text-align: center;
+}
+.card_items h1{
+  margin: 50px 0;
+  font-weight: 400;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.card_items h1::after{
+  content: '';
+  display: block;
+  border: 2px solid #ff4141;
+  width: 120px;
+  margin:20px auto;
+}
+
+.card_items ul{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  text-align: left;
+  list-style: none;
+}
+.res{
+  margin:20px
+}

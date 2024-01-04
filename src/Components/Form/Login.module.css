@@ -1,0 +1,54 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h1{
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.login h1::after{
+  content: '';
+  display: block;
+  border: 1.5px solid #ff4141;
+  width: 20%;
+  margin: 10px 0;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login form input{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ff4141;
+  font-size: 16px;
+  border-radius: 2px;
+  color: #313131;
+}
+.login form input:last-of-type{
+  border: none;
+  background-color: #ff4141;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn_signup p {
+  color: #616161;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.btn_signup p button{
+  background-color: transparent;
+  border: none;
+  color: #ff4141;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}

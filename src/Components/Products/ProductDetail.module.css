@@ -1,0 +1,140 @@
+.product_detail {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 40px;
+}
+.left_side {
+  display: flex;
+  width: 45%;
+  gap: 10px;
+}
+.list_img img {
+  width: 123px;
+}
+.main_img img {
+  width: 500px;
+}
+
+.right_side h1{
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.star{
+  padding: 15px 0;
+  display: flex;
+  gap:2px
+}
+.star img{
+  height:20px
+}
+.price{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 0;
+}
+.old{
+  font-size: 22px;
+  color: #818181;
+  text-decoration: line-through;
+}
+.new{
+  font-size: 25px;
+  color: #ff4141;
+  font-weight: 500;
+}
+.desc{
+  color: #616161;
+  padding: 10px 0;
+}
+.size{
+  padding: 20px 0 ;
+}
+.size h2{
+  color: #111;
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+.select{
+  display: flex;
+  gap: 20px;
+}
+.select p{
+  border: 1px solid #ddd;
+  color: #616161;
+  width: 50px;
+  height: 45px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cart_btn{
+  padding: 8px 0;
+}
+.cart_btn button{
+  width: 20%;
+  padding: 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #ff4141;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.info{
+  padding: 15px 0;
+}
+.info p {
+  color: #616161;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+}
+.info span{
+  color: #111;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .product_detail{
+    flex-direction:column ;
+  }
+  .list_img img{
+    width:80px
+  }
+  .main_img img{
+    width:320px
+  }
+  .right_side h1{
+    font-size:35px
+  }
+  .cart_btn button{
+    width:60%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1324px) {
+  .product_detail{
+    flex-direction:column ;
+  }
+  .list_img img{
+    width:80px
+  }
+  .main_img img{
+    width:320px
+  }
+  .right_side h1{
+    font-size:35px
+  }
+  .cart_btn button{
+    width:30%;
+  }
+}
